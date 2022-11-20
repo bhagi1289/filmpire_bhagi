@@ -27,7 +27,7 @@ const Movies = () => {
   }
 
   if (error) return 'An error occured ....';
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <MovieList movies={data} />

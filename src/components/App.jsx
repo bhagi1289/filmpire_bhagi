@@ -16,7 +16,7 @@ const App = () => {
       <main className={classes.content}>
         <div className={classes.toolBar} />
         <Routes>
-          <Route exact path="/movies/:id" element={<MovieInformation />} />
+          <Route exact path="/movie/:id" element={<MovieInformation />} />
           <Route exact path="/actors/:id" element={<Actors />} />
           <Route exact path="/profile/:id" element={<Profile />} />
           <Route exact path="/" element={<Movies />} />

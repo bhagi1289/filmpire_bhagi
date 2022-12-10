@@ -9,6 +9,8 @@ import useStyles from './styles';
 
 const Search = () => {
   console.log('search .............');
+  const location = useLocation();
+
   const classes = useStyles();
   const [query, setQuery] = useState('');
   const dispatch = useDispatch();
@@ -18,6 +20,7 @@ const Search = () => {
       dispatch(searchMovie(query));
     }
   };
+  if (location.pathname !== '/') return null;
   return (
     <div className={classes.searchContainer}>
       <TextField

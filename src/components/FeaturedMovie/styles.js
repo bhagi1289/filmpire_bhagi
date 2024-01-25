@@ -21,7 +21,7 @@ export default makeStyles((theme) => ({
     position: 'absolute',
     top: '0', // Changed from '95px' to '0' to include the top part of the image
     right: '0',
-    bottom: '0', 
+    bottom: '0',
     objectFit: 'cover',
     height: '100%',
     width: '100%',
